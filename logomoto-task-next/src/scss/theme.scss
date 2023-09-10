@@ -1,0 +1,20 @@
+// variables
+@import "theme/variables";
+
+// bootstrap
+@import "assets/bootstrap.scss";
+
+// slick slider
+// $slick-font-path: "./fonts/";
+// $slick-loader-path: "./";
+@import "slick-carousel/slick/slick-theme.scss";
+@import "slick-carousel/slick/slick.scss";
+
+// animate.css
+@import "assets/animate.css";
+
+// mixins
+@import "theme/mixins";
+
+// common scss
+@import "theme/common";

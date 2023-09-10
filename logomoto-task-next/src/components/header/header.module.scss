@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../scss/theme/_variables.scss";
+
+.header {
+  padding: 50px 0 20px;
+  transition: all 0.3s ease;
+  &.fixedTop {
+    background-color: #2e1775;
+    padding: 20px 0 20px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+    @include media-breakpoint-between(md, lg) {
+      padding: 10px 0 10px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 10px 0 5px;
+    }
+  }
+  @include media-breakpoint-between(md, lg) {
+    padding: 15px 0 15px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 10px 0 5px;
+  }
+}

@@ -1,0 +1,21 @@
+// bootstrap variables
+$primary: #4b2b98;
+$secondary: rgb(220, 61, 43);
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1320px,
+  xxl: 1920px,
+);
+
+$container-max-widths: (
+  xs: 100%,
+  sm: 540px,
+  md: 720px,
+  lg: 990px,
+  xl: 1280px,
+  xxl: 1785px,
+);

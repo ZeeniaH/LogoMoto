@@ -1,0 +1,155 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../scss/theme/_variables.scss";
+
+.heroSection {
+  padding: 200px 0 100px;
+  color: #fff;
+  position: relative;
+  background-image: linear-gradient(
+    120deg,
+    rgb(190, 63, 48) 0%,
+    rgb(152, 14, 129) 30%,
+    rgb(46, 36, 113) 100%
+  );
+  @include media-breakpoint-between(xl, xxl) {
+    padding: 200px 0 250px;
+  }
+  @include media-breakpoint-between(lg, xl) {
+    padding: 160px 0 140px;
+  }
+  @include media-breakpoint-between(md, lg) {
+    padding: 140px 0 100px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 70px 0 100px;
+    background-image: linear-gradient(
+      120deg,
+      rgb(190, 63, 48) 10%,
+      rgb(152, 14, 129) 47%,
+      rgb(46, 36, 113) 100%
+    );
+  }
+  @include media-breakpoint-down(xs) {
+    padding: 70px 0 110px;
+  }
+  .homeHeroBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    z-index: 0;
+    @include media-breakpoint-down(md) {
+      width: 65%;
+    }
+  }
+  .animation {
+    position: relative;
+    z-index: 1;
+  }
+  p {
+    font-size: 24px;
+    @include media-breakpoint-between(md, lg) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 12px;
+    }
+  }
+  ul {
+    padding-left: 0;
+    list-style: none;
+    li {
+      font-family: "Poppins";
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 15px;
+      @include media-breakpoint-down(md) {
+        font-size: 11px;
+        margin-bottom: 8px;
+      }
+      @include media-breakpoint-down(xs) {
+        font-size: 9px;
+      }
+      svg {
+        margin-right: 15px;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+        @include media-breakpoint-between(md, lg) {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+        @include media-breakpoint-between(lg, xl) {
+          margin-right: 10px;
+        }
+        @include media-breakpoint-down(md) {
+          margin-right: 5px;
+          font-size: 15px;
+          width: 15px;
+          height: 15px;
+          margin-bottom: 3px;
+        }
+        @include media-breakpoint-down(xs) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+  .heroRightImage {
+    position: absolute;
+    right: 0;
+    bottom: -275px;
+    z-index: 1;
+    @include media-breakpoint-between(xl, xxl) {
+      bottom: -175px;
+      max-width: 600px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      bottom: -115px;
+      max-width: 400px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      bottom: -100px;
+      max-width: 350px;
+    }
+    @include media-breakpoint-down(md) {
+      bottom: -200px;
+      max-width: 303px;
+      right: 0px;
+    }
+    @include media-breakpoint-down(xs) {
+      bottom: -155px;
+      max-width: 257px;
+    }
+  }
+  .homeHeroLeftCorner {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    bottom: -252px;
+    @include media-breakpoint-between(lg, xl) {
+      width: 150px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      width: 130px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 100px;
+      bottom: -114px;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 88px;
+      bottom: -100px;
+    }
+  }
+}

@@ -1,0 +1,638 @@
+// poppins font
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../../fonts/Poppins/Poppins-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../fonts/Poppins/Poppins-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../fonts/Poppins/Poppins-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../../fonts/Poppins/Poppins-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../../fonts/Poppins/Poppins-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../../fonts/Poppins/Poppins-ExtraLight.ttf) format("truetype");
+}
+
+// Montserrat font
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../fonts/Montserrat/Montserrat-SemiBold.ttf) format("truetype");
+}
+
+// Myriad Pro font
+@font-face {
+  font-family: "Myriad";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../fonts/Myriad/Myriad-Pro-Regular.ttf) format("truetype");
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 25px;
+  overflow-x: hidden;
+  @include media-breakpoint-between(lg, xl) {
+    font-size: 22px;
+  }
+  @include media-breakpoint-between(md, lg) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+  h2 {
+    font-family: "Poppins";
+    font-size: 70px;
+    font-weight: 800;
+    @include media-breakpoint-between(xl, xxl) {
+      font-size: 55px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 40px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      font-size: 30px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 25px;
+    }
+  }
+  h3 {
+    font-family: "Poppins";
+    font-size: 58px;
+    font-weight: 800;
+    @include media-breakpoint-between(xl, xxl) {
+      font-size: 45px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 30px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      font-size: 25px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 21px;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 17px;
+    }
+  }
+  h4 {
+    font-family: "Poppins";
+    font-size: 58px;
+    font-weight: 800;
+    @include media-breakpoint-between(xl, xxl) {
+      font-size: 45px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 30px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      font-size: 21px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 17px;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 15px;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  #__next {
+    overflow-x: hidden;
+  }
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include media-breakpoint-down(xs) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .btn {
+    border-radius: 30px;
+    border: none;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 70px;
+    box-shadow: -7px 7px 20.4px -1.4px rgba(0, 0, 0, 0.35);
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 22px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      padding: 8px 50px 10px;
+      margin: auto;
+      display: table;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 12px;
+      padding: 6px 40px 7px;
+    }
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+    &.btn-primary {
+      background-image: linear-gradient(
+        270deg,
+        rgb(72, 43, 154) 0%,
+        rgb(89, 44, 146) 59%,
+        rgb(106, 45, 137) 99%
+      );
+    }
+    &.btn-secondary {
+      background-image: linear-gradient(
+        270deg,
+        rgb(220, 61, 43) 0%,
+        rgb(177, 0, 141) 100%
+      );
+    }
+  }
+  .screen {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+    background-image: linear-gradient(
+      120deg,
+      rgb(190, 63, 48) 0%,
+      rgb(152, 14, 129) 30%,
+      rgb(46, 36, 113) 100%
+    );
+    opacity: 0;
+    animation: fade 0.4s ease-in forwards;
+    @keyframes fade {
+      0% {
+        opacity: 0.4;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  .balls {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .ball {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 6px 0 0;
+      animation: oscillate 0.7s ease-in forwards infinite;
+    }
+    .one {
+      animation-delay: 0.5s;
+    }
+    .two {
+      animation-delay: 1s;
+    }
+    .three {
+      animation-delay: 2s;
+    }
+    @keyframes oscillate {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+  .navbar {
+    .navbar-brand {
+      width: 400px;
+      @include media-breakpoint-between(xl, xxl) {
+        width: 350px;
+      }
+      @include media-breakpoint-between(lg, xl) {
+        width: 230px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        width: 200px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 150px;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 130px;
+      }
+    }
+    .navbar-toggler {
+      box-shadow: none;
+      border: none;
+      img {
+        @include media-breakpoint-down(lg) {
+          width: 30px;
+        }
+      }
+    }
+    .navbar-collapse {
+      &.collapsing,
+      &.show {
+        background-color: rgb(46, 23, 117);
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            font-family: "Poppins";
+            font-size: 16px;
+            color: #fff;
+            padding: 10px 22px;
+            @include media-breakpoint-between(xl, xxl) {
+              font-size: 15px;
+            }
+            @include media-breakpoint-between(lg, xl) {
+              font-size: 11px;
+            }
+            @include media-breakpoint-down(md) {
+              font-size: 14px;
+            }
+          }
+          &:last-child {
+            background-color: #fff;
+            border-radius: 30px;
+            margin-left: 30px;
+            @include media-breakpoint-down(lg) {
+              margin: 10px auto;
+            }
+            .nav-link {
+              font-family: "Montserrat";
+              font-weight: 600;
+              color: rgb(157, 16, 126);
+              background-image: linear-gradient(
+                270deg,
+                rgb(72, 43, 154) 0%,
+                rgb(89, 44, 146) 59%,
+                rgb(106, 45, 137) 99%
+              );
+              border-radius: 20px;
+              background-clip: text;
+              padding: 10px 30px;
+              @include media-breakpoint-down(md) {
+                padding: 7px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .clientsSlider {
+    .slick-slider {
+      .slick-slide {
+        padding: 0 50px;
+        @include media-breakpoint-between(xl, xxl) {
+          padding: 0 30px;
+        }
+        @include media-breakpoint-between(lg, xl) {
+          padding: 0 10px;
+        }
+        @include media-breakpoint-between(md, lg) {
+          padding: 0 10px;
+        }
+        @include media-breakpoint-down(md) {
+          padding: 9px 10px;
+        }
+      }
+      .slick-dots {
+        bottom: -200px;
+        transform: rotate(90deg);
+        z-index: 1;
+        @include media-breakpoint-down(md) {
+          bottom: -85px;
+        }
+        li {
+          width: 45px;
+          height: 45px;
+          @include media-breakpoint-between(xl, xxl) {
+            width: 25px;
+            height: 25px;
+          }
+          @include media-breakpoint-between(lg, xl) {
+            width: 25px;
+            height: 25px;
+          }
+          @include media-breakpoint-between(md, lg) {
+            width: 22px;
+            height: 22px;
+          }
+          @include media-breakpoint-down(md) {
+            width: 10px;
+            height: 10px;
+          }
+          button {
+            width: 45px;
+            height: 45px;
+            @include media-breakpoint-down(md) {
+              width: 20px;
+              height: 20px;
+            }
+            &::before {
+              font-size: 15px;
+              color: #fff !important;
+              opacity: 1 !important;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 45px;
+              height: 45px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.3s ease;
+              @include media-breakpoint-between(xl, xxl) {
+                font-size: 12px;
+              }
+              @include media-breakpoint-between(lg, xl) {
+                font-size: 10px;
+              }
+              @include media-breakpoint-between(md, lg) {
+                font-size: 10px;
+              }
+              @include media-breakpoint-down(md) {
+                font-size: 8px;
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+          &.slick-active button:before {
+            font-size: 50px;
+            transform: translateY(calc(-50% - -4px));
+            @include media-breakpoint-between(xl, xxl) {
+              font-size: 30px;
+              transform: translateY(calc(-50% + 2px));
+            }
+            @include media-breakpoint-between(lg, xl) {
+              font-size: 25px;
+              transform: translateY(calc(-50% + 2px));
+            }
+            @include media-breakpoint-between(md, lg) {
+              font-size: 22px;
+              transform: translateY(calc(-50% + 2px));
+            }
+            @include media-breakpoint-down(md) {
+              font-size: 22px;
+              transform: translateY(calc(-50% + 2px));
+            }
+          }
+        }
+      }
+    }
+  }
+  .projectsSlider {
+    padding-bottom: 70px;
+    .slick-dots {
+      bottom: -40px;
+      li {
+        margin: 0;
+        button {
+          &::before {
+            color: $primary;
+            opacity: 1;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        &.slick-active {
+          button {
+            &::before {
+              width: 18px;
+              height: 18px;
+              color: #fff;
+              border: 6px solid $primary;
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+  .accordion {
+    .accordion-item {
+      position: relative;
+      border: none;
+      margin-bottom: 20px;
+      border-radius: 25px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 5px;
+        border-radius: 15px;
+      }
+      p {
+        margin-bottom: 0px;
+        line-height: 1.3;
+        @include media-breakpoint-down(md) {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+      .accordion-button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        border-radius: 50% !important;
+        background-image: linear-gradient(
+          0deg,
+          rgb(237, 184, 43) 11%,
+          rgb(173, 0, 95) 50%
+        );
+        color: #fff;
+        padding: 2px 18px;
+        width: 70px;
+        height: 70px;
+        justify-content: center;
+        @include media-breakpoint-between(xl, xxl) {
+          width: 55px;
+          height: 55px;
+        }
+        @include media-breakpoint-between(lg, xl) {
+          width: 45px;
+          height: 45px;
+        }
+        @include media-breakpoint-between(md, lg) {
+          width: 35px;
+          height: 35px;
+        }
+        @include media-breakpoint-down(md) {
+          width: 25px;
+          height: 25px;
+          top: 10px;
+          right: 10px;
+          padding: 2px 13px;
+        }
+        @include media-breakpoint-down(xs) {
+          width: 20px;
+          height: 20px;
+          padding: 2px;
+        }
+        &::after {
+          background-image: none;
+          content: "-";
+          color: #fff;
+          padding: 0;
+          display: contents;
+          font-size: 45px;
+          @include media-breakpoint-between(xl, xxl) {
+            font-size: 40px;
+          }
+          @include media-breakpoint-between(lg, xl) {
+            font-size: 35px;
+          }
+          @include media-breakpoint-between(md, lg) {
+            font-size: 30px;
+          }
+          @include media-breakpoint-down(md) {
+            font-size: 20px;
+          }
+          @include media-breakpoint-down(xs) {
+            font-size: 16px;
+          }
+        }
+        & + .row {
+          border-radius: 25px;
+          box-shadow: 0px 208px 227.5px 22.5px rgba(0, 0, 0, 0.45);
+          padding: 90px 90px 60px 0;
+          transition: all 0.3s ease;
+          margin: 0;
+          @include media-breakpoint-between(xl, xxl) {
+            padding: 60px 90px 30px 0;
+            font-size: 22px;
+          }
+          @include media-breakpoint-between(lg, xl) {
+            padding: 50px 90px 25px 0;
+            font-size: 20px;
+          }
+          @include media-breakpoint-between(md, lg) {
+            padding: 40px 90px 20px 0;
+            font-size: 16px;
+          }
+          @include media-breakpoint-down(md) {
+            padding: 30px 30px 15px 0;
+            font-size: 14px;
+            border-radius: 15px;
+            box-shadow: -30px 30px 70px 0px rgb(0, 0, 0, 45%);
+          }
+          @include media-breakpoint-down(xs) {
+            font-size: 8px;
+          }
+          .questionNumber {
+            font-size: 50px;
+            font-family: "Poppins";
+            color: rgb(75, 43, 152);
+            font-weight: bold;
+            margin: -12px 40px 0 70px;
+            @include media-breakpoint-between(xl, xxl) {
+              font-size: 35px;
+              margin: -8px 25px 0 50px;
+            }
+            @include media-breakpoint-between(lg, xl) {
+              font-size: 40px;
+            }
+            @include media-breakpoint-between(md, lg) {
+              font-size: 25px;
+              margin: -4px 9px 0 25px;
+            }
+            @include media-breakpoint-down(md) {
+              font-size: 20px;
+              margin: -2px 0px 0px 5px;
+            }
+            @include media-breakpoint-down(xs) {
+              font-size: 13px;
+            }
+          }
+        }
+        &.collapsed {
+          background-image: linear-gradient(
+            0deg,
+            rgb(172, 0, 96) 11%,
+            rgb(77, 31, 228) 50%
+          );
+          & + .row {
+            box-shadow: none;
+            .questionNumber {
+              color: #b8b8b8;
+            }
+            .question {
+              color: #b8b8b8;
+            }
+          }
+          &::after {
+            content: "+";
+          }
+        }
+      }
+    }
+    .accordion-body {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,301 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../scss/theme/_variables.scss";
+
+.clients {
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(74, 43, 151);
+  text-align: center;
+  color: #fff;
+  padding: 150px 100px 470px;
+  position: relative;
+  @include media-breakpoint-between(lg, xl) {
+    padding: 100px 30px 310px;
+  }
+  @include media-breakpoint-between(md, lg) {
+    padding: 100px 50px 310px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 100px 15px 220px;
+  }
+  .testimonialsTopImage {
+    position: relative;
+    top: -307px;
+    @include media-breakpoint-between(xl, xxl) {
+      max-width: 200px;
+      top: -248px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      max-width: 180px;
+      top: -187px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      max-width: 150px;
+      top: -172px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 110px;
+      top: -154px;
+    }
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  .client {
+    .review {
+      background-image: url(../../../public/images/client-review-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding: 40px 50px 80px;
+      @include media-breakpoint-between(lg, xl) {
+        padding: 30px 20px 50px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        padding: 30px 20px 50px;
+      }
+      @include media-breakpoint-down(md) {
+        padding: 25px 25px 50px;
+      }
+      .clientHeading {
+        font-weight: 600;
+        font-size: 22px;
+        @include media-breakpoint-between(xl, xxl) {
+          font-size: 16px;
+        }
+        @include media-breakpoint-between(lg, xl) {
+          font-size: 16px;
+        }
+        @include media-breakpoint-between(md, lg) {
+          font-size: 16px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+          margin-bottom: 6px;
+        }
+        @media (max-width: 374px) {
+          font-size: 14px;
+        }
+      }
+      .clientReview {
+        font-weight: 300;
+        font-size: 16px;
+        @include media-breakpoint-between(xl, xxl) {
+          font-size: 14px;
+        }
+        @include media-breakpoint-between(lg, xl) {
+          font-size: 14px;
+        }
+        @include media-breakpoint-between(md, lg) {
+          font-size: 14px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 14px;
+          line-height: 1;
+        }
+        @media (max-width: 374px) {
+          font-size: 12px;
+        }
+      }
+    }
+    .clientName {
+      font-size: 16px;
+      line-height: 1;
+      @include media-breakpoint-between(xl, xxl) {
+        font-size: 12px;
+      }
+      @include media-breakpoint-between(lg, xl) {
+        font-size: 12px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        font-size: 10px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 12px;
+      }
+      @media (max-width: 374px) {
+        font-size: 10px;
+      }
+    }
+    .clientDesignation {
+      font-size: 16px;
+      margin-bottom: 10px;
+      line-height: 1;
+      @include media-breakpoint-between(xl, xxl) {
+        font-size: 12px;
+      }
+      @include media-breakpoint-between(lg, xl) {
+        font-size: 10px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        font-size: 10px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 10px;
+      }
+      @media (max-width: 374px) {
+        font-size: 8px;
+      }
+    }
+  }
+  .stars {
+    .star {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+      @include media-breakpoint-between(xl, xxl) {
+        width: 20px;
+        height: 20px;
+      }
+      @include media-breakpoint-between(lg, xl) {
+        width: 16px;
+        height: 18px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        width: 11px;
+        height: 14px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .social {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
+    }
+    .socialLink {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      img {
+        object-fit: contain !important;
+        @include media-breakpoint-between(xl, xxl) {
+          width: 22px;
+          height: 22px;
+        }
+        @include media-breakpoint-between(lg, xl) {
+          width: 22px;
+          height: 22px;
+        }
+        @include media-breakpoint-down(md) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    @include media-breakpoint-between(md, lg) {
+      img {
+        width: 18px;
+        height: 18px;
+      }
+      @include media-breakpoint-down(md) {
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+  .clientImage {
+    border: 13px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    @include media-breakpoint-down(md) {
+      border-width: 7px;
+    }
+  }
+  .testimonialsBottomImage {
+    position: absolute;
+    bottom: -348px;
+    right: -72px;
+    width: 75%;
+    @include media-breakpoint-between(xl, xxl) {
+      bottom: -245px;
+      right: -50px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      bottom: -188px;
+      right: -48px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      bottom: -133px;
+      right: -55px;
+    }
+    @include media-breakpoint-down(md) {
+      bottom: -102px;
+      right: -25px;
+      width: 380px;
+    }
+    .testimonialsBottomRightImage {
+      position: absolute;
+      bottom: 173px;
+      right: 0px;
+      width: 42%;
+      @include media-breakpoint-between(xl, xxl) {
+        right: 0;
+        bottom: 120px;
+      }
+      @include media-breakpoint-between(lg, xl) {
+        right: 0;
+        bottom: 92px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        bottom: 65px;
+        right: 0;
+      }
+      @include media-breakpoint-down(md) {
+        bottom: 49px;
+        right: 0;
+      }
+    }
+    .testimonialsBottomCenterImage {
+      position: absolute;
+      bottom: 193px;
+      right: 440px;
+      width: 25%;
+      @include media-breakpoint-between(xl, xxl) {
+        right: 320px;
+        bottom: 134px;
+      }
+      @include media-breakpoint-between(lg, xl) {
+        right: 230px;
+        bottom: 103px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        bottom: 73px;
+        right: 175px;
+      }
+      @include media-breakpoint-down(md) {
+        bottom: 56px;
+        right: 135px;
+      }
+    }
+    .testimonialsBottomLeftImage {
+      position: absolute;
+      bottom: 57px;
+      right: 760px;
+      width: 30%;
+      @include media-breakpoint-between(xl, xxl) {
+        right: 547px;
+        bottom: 38px;
+      }
+      @include media-breakpoint-between(lg, xl) {
+        right: 404px;
+        bottom: 30px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        bottom: 19px;
+        right: 298px;
+      }
+      @include media-breakpoint-down(md) {
+        bottom: 16px;
+        right: 230px;
+      }
+    }
+  }
+}

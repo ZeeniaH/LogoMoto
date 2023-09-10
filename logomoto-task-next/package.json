@@ -1,0 +1,40 @@
+{
+  "name": "logomoto",
+  "private": true,
+  "description": "Logomoto",
+  "version": "0.0.1",
+  "license": "",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "prod": "rm -rf out/ && rm -rf .next/ && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "animate.css": "^4.1.1",
+    "bootstrap": "5.1.3",
+    "graphql": "^16.5.0",
+    "next": "^12.2.2",
+    "react": "^18.1.0",
+    "react-animation-on-scroll": "^5.1.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.1.0",
+    "react-markdown": "^8.0.3",
+    "react-slick": "^0.29.0",
+    "sass": "^1.52.1",
+    "slick-carousel": "^1.8.1",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hashmakersol/logomoto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hashmakersol/logomoto/issues"
+  }
+}

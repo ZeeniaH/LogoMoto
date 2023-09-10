@@ -1,0 +1,44 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../scss/theme/_variables.scss";
+
+.ourProjects {
+  padding: 250px 0 250px;
+  text-align: center;
+  @include media-breakpoint-between(md, lg) {
+    padding: 200px 0 200px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 200px 15px 100px;
+  }
+  p {
+    max-width: 500px;
+    margin: auto;
+    @include media-breakpoint-between(xl, xxl) {
+      font-size: 20px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 1;
+      max-width: 250px;
+    }
+  }
+  .heading {
+    @include media-breakpoint-between(xl, xxl) {
+      width: 280px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      width: 250px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      width: 200px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 200px;
+    }
+  }
+}

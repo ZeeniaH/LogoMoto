@@ -1,0 +1,97 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../scss/theme/_variables.scss";
+
+.faqs {
+  padding: 600px 0 0;
+  position: relative;
+  @include media-breakpoint-between(xl, xxl) {
+    padding: 500px 0 0;
+  }
+  @include media-breakpoint-between(lg, xl) {
+    padding: 400px 0 0;
+  }
+  @include media-breakpoint-between(md, lg) {
+    padding: 310px 0 0;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 230px 15px 0;
+  }
+  h3 {
+    max-width: 600px;
+    margin: 0 auto 0;
+    @include media-breakpoint-between(xl, xxl) {
+      margin: 0 auto 0;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      margin: 0 auto 0;
+    }
+    @include media-breakpoint-between(md, lg) {
+      margin: 0 auto 0;
+    }
+    @include media-breakpoint-down(md) {
+      margin: 0 auto 0;
+    }
+  }
+  .faqsContainer {
+    @include media-breakpoint-up(xxl) {
+      max-width: 1400px;
+    }
+  }
+  .question {
+    font-family: Myriad;
+    color: #000;
+    font-size: 25px;
+  }
+  .answer {
+    font-size: 25px;
+    font-family: "Poppins";
+    color: rgb(69, 47, 148);
+    font-weight: bold;
+    margin-top: 30px;
+    @include media-breakpoint-between(md, lg) {
+      font-size: 14px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 9px;
+    }
+  }
+  .faqBg {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    z-index: -1;
+    @include media-breakpoint-between(xl, xxl) {
+      max-width: 200px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      max-width: 150px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 70px;
+      top: 23.5%;
+      left: -16px;
+    }
+    @include media-breakpoint-down(xs) {
+      top: 27%;
+    }
+  }
+  .faqBottomImg {
+    @include media-breakpoint-between(xl, xxl) {
+      width: 900px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      width: 700px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      width: 550px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+  }
+}

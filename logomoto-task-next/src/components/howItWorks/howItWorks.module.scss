@@ -1,0 +1,228 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../scss/theme/_variables.scss";
+
+.howItWorks {
+  padding: 300px 0 100px;
+  @include media-breakpoint-between(xl, xxl) {
+    padding: 250px 0 100px;
+  }
+  @include media-breakpoint-between(lg, xl) {
+    padding: 200px 0 100px;
+  }
+  @include media-breakpoint-between(md, lg) {
+    padding: 200px 0 100px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 325px 0 45px;
+  }
+  .stepsWrapper {
+    .stepImage {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transform: scale(0.5);
+      transition: all 1s ease;
+      @include media-breakpoint-up(xxl) {
+        width: 75%;
+      }
+      img {
+        object-fit: contain !important;
+      }
+      &.active {
+        transform: scale(0.95);
+        position: static;
+        opacity: 1;
+        @include media-breakpoint-between(md, lg) {
+          transform: scale(1);
+        }
+        @include media-breakpoint-down(md) {
+          transform: scale(0.9);
+        }
+      }
+    }
+    .steps {
+      text-align: left;
+      @include media-breakpoint-down(md) {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow: auto;
+        padding-top: 100px;
+        margin-left: -13px;
+        margin-right: -13px;
+        width: calc(100% + 26px);
+      }
+      @include media-breakpoint-down(xs) {
+        padding-top: 50px;
+        margin-left: -12px;
+        margin-right: -12px;
+        width: calc(100% + 24px);
+      }
+      .step {
+        min-height: 150px;
+        position: relative;
+        padding-right: 60px;
+        cursor: pointer;
+        @include media-breakpoint-down(md) {
+          min-width: 74vw;
+          padding-right: 0;
+          padding-left: 30px;
+          min-height: 200px;
+        }
+        .stepNumber {
+          margin-top: 10px;
+          font-size: 30px;
+          font-weight: 800;
+          color: #4b2b98;
+          margin-bottom: 0;
+          @include media-breakpoint-between(md, lg) {
+            font-size: 22px;
+          }
+          @include media-breakpoint-down(md) {
+            color: rgba(58, 58, 58, 0.651);
+            font-size: 26px;
+          }
+        }
+        .stepTitle {
+          font-size: 22px;
+          font-weight: 700;
+          color: #000;
+          @include media-breakpoint-between(md, lg) {
+            font-size: 16px;
+          }
+          @include media-breakpoint-down(md) {
+            color: rgba(58, 58, 58, 0.651);
+            font-size: 17px;
+          }
+          @include media-breakpoint-down(xs) {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+        .stepDescription {
+          font-size: 16px;
+          font-weight: 300;
+          color: #3a3a3a;
+          line-height: 0;
+          opacity: 0;
+          transition: line-height 0.5s ease, opacity 0.5s ease;
+          @include media-breakpoint-down(md) {
+            line-height: 1.3;
+            opacity: 1;
+          }
+          @include media-breakpoint-down(md) {
+            font-size: 14px;
+            font-weight: 100;
+          }
+          @include media-breakpoint-down(xs) {
+            font-size: 12px;
+          }
+        }
+        .checkPoint {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          background-color: #4b2b98;
+          border-radius: 50%;
+          border: 0px solid #fff;
+          outline: #4b2b98 0px solid;
+          transition: all 0.5s ease;
+          z-index: 0;
+          @include media-breakpoint-down(md) {
+            top: -50px;
+            left: 50px;
+            right: unset;
+          }
+          @include media-breakpoint-down(xs) {
+            width: 15px;
+            height: 15px;
+            top: -30px;
+          }
+        }
+        .theRoad {
+          content: "";
+          width: 6px;
+          height: 100%;
+          position: absolute;
+          top: 15px;
+          right: 7px;
+          background-color: rgb(77, 31, 228);
+          z-index: -1;
+          @include media-breakpoint-down(md) {
+            left: 52px;
+            top: -42px;
+            right: unset;
+            height: 6px;
+            width: 100%;
+          }
+          @include media-breakpoint-down(xs) {
+            left: 55px;
+            top: -24px;
+            height: 4px;
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0px;
+            border-radius: 0.3em;
+            background-color: rgb(77, 31, 228);
+            z-index: 2;
+            @include media-breakpoint-down(md) {
+              width: 0px;
+              height: 100% !important;
+            }
+          }
+        }
+        &.active {
+          .theRoad {
+            background-color: rgb(220, 61, 43);
+            &::after {
+              height: 100%;
+              transition: all 5s linear;
+              @include media-breakpoint-down(md) {
+                width: 100%;
+              }
+            }
+          }
+          .checkPoint {
+            border: 3px solid #fff;
+            outline: #4b2b98 13px solid;
+            @include media-breakpoint-down(xs) {
+              outline: #4b2b98 10px solid;
+            }
+          }
+          .stepNumber {
+            color: #4b2b98;
+          }
+          .stepTitle {
+            color: #000;
+          }
+          .stepDescription {
+            line-height: 1.3;
+            opacity: 1;
+            @include media-breakpoint-down(md) {
+              color: #3a3a3a;
+              font-weight: 400;
+            }
+          }
+        }
+        &.active ~ .step {
+          .theRoad {
+            background-color: rgb(220, 61, 43);
+            &::after {
+              height: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../scss/theme/_variables.scss";
+
+.footer {
+  padding: 100px 0 30px;
+  text-align: center;
+  background-image: linear-gradient(
+    157deg,
+    rgb(46, 36, 113) 7%,
+    rgb(152, 14, 129) 100%
+  );
+  color: #fff;
+  font-family: Myriad;
+  font-size: 16px;
+  @include media-breakpoint-between(md, lg) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 11px;
+  }
+  a {
+    color: #fff;
+  }
+  p {
+    margin-bottom: 30px;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 15px;
+    }
+  }
+  .footerLogo {
+    margin-bottom: 40px;
+    width: 100px;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 20px;
+      width: 60px;
+    }
+  }
+  .copyRight {
+    color: #927e93;
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 8px;
+    }
+  }
+}
